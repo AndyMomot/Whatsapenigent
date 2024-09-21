@@ -1,0 +1,31 @@
+strings:
+  inputs:
+    - Whatsapenigent/Resources/Localization
+  outputs:
+    - templateName: structured-swift5
+      output: Whatsapenigent/Resources/Localization/Strings.generated.swift
+      params:
+        enumName: Strings
+
+xcassets:
+  - inputs:
+    - Whatsapenigent/Resources/Images
+    outputs:
+      - templateName: swift5
+        output: Whatsapenigent/Resources/Images/Images.generated.swift
+  - inputs:
+    - Whatsapenigent/Resources/Colors/Colors.xcassets
+    outputs:
+      - templateName: swift5
+        output: Whatsapenigent/Resources/Colors/Colors.generated.swift
+        params:
+          enumName: Colors
+          
+fonts:
+  - inputs: Whatsapenigent/Resources/Fonts
+    outputs:
+    - templateName: swift5
+      output: Whatsapenigent/Resources/Fonts/Fonts.generated.swift
+      params:
+        enumName: Fonts
+
