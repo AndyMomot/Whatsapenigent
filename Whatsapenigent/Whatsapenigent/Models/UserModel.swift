@@ -8,5 +8,6 @@
 import Foundation
 
 struct UserModel: Codable {
+    private(set) var id = UUID().uuidString
     var name, hobby: String
 }

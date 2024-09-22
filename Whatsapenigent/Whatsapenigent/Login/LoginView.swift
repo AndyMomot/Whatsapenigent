@@ -13,7 +13,7 @@ struct LoginView: View {
     
     var body: some View {
         ZStack {
-            Colors.darkGray.swiftUIColor
+            Colors.darkGrayCustom.swiftUIColor
                 .ignoresSafeArea()
             
             ScrollView {

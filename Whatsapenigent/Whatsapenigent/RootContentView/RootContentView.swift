@@ -23,7 +23,7 @@ struct RootContentView: View {
                     LoginView()
                         .environmentObject(viewModel)
                 case .main:
-                    Text("Main")
+                    TabBar()
                         .environmentObject(viewModel)
                 }
             }

@@ -38,7 +38,7 @@ struct InputField: View {
 
 #Preview {
     ZStack {
-        Colors.darkGray.swiftUIColor
+        Colors.darkGrayCustom.swiftUIColor
         InputField(title: "Nicnemus",
                    tintColor: .white,
                    text: .constant(""))
