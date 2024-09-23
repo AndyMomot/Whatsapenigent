@@ -1,31 +1,31 @@
 strings:
   inputs:
-    - Whatsapenigent/Resources/Localization
+    - Whatsenigent/Resources/Localization
   outputs:
     - templateName: structured-swift5
-      output: Whatsapenigent/Resources/Localization/Strings.generated.swift
+      output: Whatsenigent/Resources/Localization/Strings.generated.swift
       params:
         enumName: Strings
 
 xcassets:
   - inputs:
-    - Whatsapenigent/Resources/Images
+    - Whatsenigent/Resources/Images
     outputs:
       - templateName: swift5
-        output: Whatsapenigent/Resources/Images/Images.generated.swift
+        output: Whatsenigent/Resources/Images/Images.generated.swift
   - inputs:
-    - Whatsapenigent/Resources/Colors/Colors.xcassets
+    - Whatsenigent/Resources/Colors/Colors.xcassets
     outputs:
       - templateName: swift5
-        output: Whatsapenigent/Resources/Colors/Colors.generated.swift
+        output: Whatsenigent/Resources/Colors/Colors.generated.swift
         params:
           enumName: Colors
           
 fonts:
-  - inputs: Whatsapenigent/Resources/Fonts
+  - inputs: Whatsenigent/Resources/Fonts
     outputs:
     - templateName: swift5
-      output: Whatsapenigent/Resources/Fonts/Fonts.generated.swift
+      output: Whatsenigent/Resources/Fonts/Fonts.generated.swift
       params:
         enumName: Fonts
 
