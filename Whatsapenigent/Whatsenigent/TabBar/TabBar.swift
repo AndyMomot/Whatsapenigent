@@ -21,7 +21,7 @@ struct TabBar: View {
                 HomeView()
                     .tag(TabBarSelectionView.home.rawValue)
                 
-                Text("Doc")
+                CalculationsView()
                     .tag(TabBarSelectionView.doc.rawValue)
                 
                 Text("achievements")

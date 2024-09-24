@@ -11,6 +11,18 @@ extension CalculationsView {
     final class CalculationsViewModel: ObservableObject {
         @Published var showProfile = false
         @Published var showNotifications = false
+        @Published var viewState: CalculationSection = .marketConditions(state: .new)
+        
+        @Published var marketConditionsState: CalculationSectionState = .new
+        @Published var riskAssessmentState: CalculationSectionState = .new
+        @Published var calculatingNetBenefitsState: CalculationSectionState = .new
+        @Published var rateTimeState: CalculationSectionState = .new
+        @Published var decisionMakingState: CalculationSectionState = .new
+        
+        @Published var numberOfBuyers: String = ""
+        @Published var purchasedByByer: String = ""
+        @Published var times: String = ""
+        @Published var price: String = ""
     }
 }
 

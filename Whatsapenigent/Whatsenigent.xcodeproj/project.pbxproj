@@ -20,6 +20,8 @@
 		472C92652CA2CAE900104115 /* CalculationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472C92642CA2CAE900104115 /* CalculationsView.swift */; };
 		472C92672CA2CAEE00104115 /* CalculationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472C92662CA2CAEE00104115 /* CalculationsViewModel.swift */; };
 		472C926A2CA2CF1300104115 /* CalculationSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472C92692CA2CF1300104115 /* CalculationSectionView.swift */; };
+		472C926C2CA3095000104115 /* CalculationField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472C926B2CA3095000104115 /* CalculationField.swift */; };
+		472C926E2CA31C6800104115 /* MarketDemandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472C926D2CA31C6800104115 /* MarketDemandView.swift */; };
 		47C952F52C9EF898007FCC8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C952F42C9EF898007FCC8E /* AppDelegate.swift */; };
 		47C952F72C9EF898007FCC8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C952F62C9EF898007FCC8E /* SceneDelegate.swift */; };
 		47C952F92C9EF898007FCC8E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C952F82C9EF898007FCC8E /* RootViewController.swift */; };
@@ -105,6 +107,8 @@
 		472C92642CA2CAE900104115 /* CalculationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationsView.swift; sourceTree = "<group>"; };
 		472C92662CA2CAEE00104115 /* CalculationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationsViewModel.swift; sourceTree = "<group>"; };
 		472C92692CA2CF1300104115 /* CalculationSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationSectionView.swift; sourceTree = "<group>"; };
+		472C926B2CA3095000104115 /* CalculationField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationField.swift; sourceTree = "<group>"; };
+		472C926D2CA31C6800104115 /* MarketDemandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDemandView.swift; sourceTree = "<group>"; };
 		47C952F12C9EF898007FCC8E /* Whatsenigent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whatsenigent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47C952F42C9EF898007FCC8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47C952F62C9EF898007FCC8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -242,6 +246,8 @@
 			isa = PBXGroup;
 			children = (
 				472C92692CA2CF1300104115 /* CalculationSectionView.swift */,
+				472C926B2CA3095000104115 /* CalculationField.swift */,
+				472C926D2CA31C6800104115 /* MarketDemandView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -767,6 +773,7 @@
 				47C953D22C9FEFE9007FCC8E /* TabBarCustomView.swift in Sources */,
 				47C953852C9F0169007FCC8E /* CustomLoaderView.swift in Sources */,
 				47C953E82CA187DE007FCC8E /* SettingsView.swift in Sources */,
+				472C926C2CA3095000104115 /* CalculationField.swift in Sources */,
 				47C953D12C9FEFE9007FCC8E /* TabBar.swift in Sources */,
 				47C953762C9EFB93007FCC8E /* String+Additions.swift in Sources */,
 				472C925F2CA2BAA600104115 /* EmployeeCostsResultCell.swift in Sources */,
@@ -776,6 +783,7 @@
 				47C953912C9F0991007FCC8E /* OnboardingView.swift in Sources */,
 				47C953742C9EFB93007FCC8E /* Date+Additions.swift in Sources */,
 				470B3A822CA1CA1E0035191A /* CustomGreedViewRow.swift in Sources */,
+				472C926E2CA31C6800104115 /* MarketDemandView.swift in Sources */,
 				472C92612CA2BD0A00104115 /* EmployeeCostsResultView.swift in Sources */,
 				47C953E52CA17795007FCC8E /* GreenDivider.swift in Sources */,
 				47C953C42C9F15A8007FCC8E /* LoginView.swift in Sources */,

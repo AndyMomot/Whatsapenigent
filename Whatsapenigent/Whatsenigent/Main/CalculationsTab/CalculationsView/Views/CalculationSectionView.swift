@@ -36,6 +36,12 @@ struct CalculationSectionView: View {
                         RoundedRectangle(cornerRadius: 18)
                             .stroke(.white, lineWidth: 2)
                             .padding(6)
+                        
+                        Image(systemName: "checkmark")
+                            .resizable()
+                            .scaledToFit()
+                            .foregroundStyle(.white)
+                            .padding()
                     }
                 }
             }
@@ -44,6 +50,6 @@ struct CalculationSectionView: View {
 }
 
 #Preview {
-    CalculationSectionView(item: .marketConditions(state: .finish)) {}
+    CalculationSectionView(item: .marketConditions(state: .inProgress)) {}
         .frame(maxWidth: 100, maxHeight: 95)
 }
