@@ -39,6 +39,15 @@ struct EmployeeCostsResultView: View {
 
 #Preview {
     EmployeeCostsResultView(items: [
-        .init(netBenefit: 2332)
+        .init(
+            employmentCosts: 0,
+            trainingCosts: 0,
+            implementationCosts: 0,
+            
+            increasedProductivity: 0,
+            improvingRetentionRates: 0,
+            increasedRevenueRoles: 0,
+            
+            netBenefit: 1000)
     ]) {_ in}
 }

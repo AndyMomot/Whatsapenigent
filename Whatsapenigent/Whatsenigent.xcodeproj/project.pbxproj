@@ -17,6 +17,9 @@
 		472C925D2CA2B5F800104115 /* EmployeeCostsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472C925C2CA2B5F800104115 /* EmployeeCostsModel.swift */; };
 		472C925F2CA2BAA600104115 /* EmployeeCostsResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472C925E2CA2BAA600104115 /* EmployeeCostsResultCell.swift */; };
 		472C92612CA2BD0A00104115 /* EmployeeCostsResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472C92602CA2BD0A00104115 /* EmployeeCostsResultView.swift */; };
+		472C92652CA2CAE900104115 /* CalculationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472C92642CA2CAE900104115 /* CalculationsView.swift */; };
+		472C92672CA2CAEE00104115 /* CalculationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472C92662CA2CAEE00104115 /* CalculationsViewModel.swift */; };
+		472C926A2CA2CF1300104115 /* CalculationSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472C92692CA2CF1300104115 /* CalculationSectionView.swift */; };
 		47C952F52C9EF898007FCC8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C952F42C9EF898007FCC8E /* AppDelegate.swift */; };
 		47C952F72C9EF898007FCC8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C952F62C9EF898007FCC8E /* SceneDelegate.swift */; };
 		47C952F92C9EF898007FCC8E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C952F82C9EF898007FCC8E /* RootViewController.swift */; };
@@ -99,6 +102,9 @@
 		472C925C2CA2B5F800104115 /* EmployeeCostsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCostsModel.swift; sourceTree = "<group>"; };
 		472C925E2CA2BAA600104115 /* EmployeeCostsResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCostsResultCell.swift; sourceTree = "<group>"; };
 		472C92602CA2BD0A00104115 /* EmployeeCostsResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCostsResultView.swift; sourceTree = "<group>"; };
+		472C92642CA2CAE900104115 /* CalculationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationsView.swift; sourceTree = "<group>"; };
+		472C92662CA2CAEE00104115 /* CalculationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationsViewModel.swift; sourceTree = "<group>"; };
+		472C92692CA2CF1300104115 /* CalculationSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationSectionView.swift; sourceTree = "<group>"; };
 		47C952F12C9EF898007FCC8E /* Whatsenigent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whatsenigent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47C952F42C9EF898007FCC8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47C952F62C9EF898007FCC8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -210,6 +216,32 @@
 				470B3A832CA1D5210035191A /* PotentialBenefitsView.swift */,
 				470B3A7F2CA1C9FC0035191A /* CostBenefitAnalysisView.swift */,
 				470B3A812CA1CA1E0035191A /* CustomGreedViewRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		472C92622CA2CAC600104115 /* CalculationsTab */ = {
+			isa = PBXGroup;
+			children = (
+				472C92632CA2CADF00104115 /* CalculationsView */,
+			);
+			path = CalculationsTab;
+			sourceTree = "<group>";
+		};
+		472C92632CA2CADF00104115 /* CalculationsView */ = {
+			isa = PBXGroup;
+			children = (
+				472C92682CA2CF0900104115 /* Views */,
+				472C92642CA2CAE900104115 /* CalculationsView.swift */,
+				472C92662CA2CAEE00104115 /* CalculationsViewModel.swift */,
+			);
+			path = CalculationsView;
+			sourceTree = "<group>";
+		};
+		472C92682CA2CF0900104115 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				472C92692CA2CF1300104115 /* CalculationSectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -513,6 +545,7 @@
 			isa = PBXGroup;
 			children = (
 				47C953D52C9FF511007FCC8E /* HomeTab */,
+				472C92622CA2CAC600104115 /* CalculationsTab */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -715,11 +748,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				472C92652CA2CAE900104115 /* CalculationsView.swift in Sources */,
 				47C953C12C9F1507007FCC8E /* SwiftUIViewWebView.swift in Sources */,
 				47C9536A2C9EFB93007FCC8E /* ImagePicker.swift in Sources */,
 				47C953502C9EFB93007FCC8E /* Colors.generated.swift in Sources */,
 				47C953CC2C9F1D29007FCC8E /* UserModel.swift in Sources */,
 				47C953C92C9F1847007FCC8E /* InputField.swift in Sources */,
+				472C926A2CA2CF1300104115 /* CalculationSectionView.swift in Sources */,
 				47C953932C9F0991007FCC8E /* OnboardingViewTabView.swift in Sources */,
 				47C9534E2C9EFB93007FCC8E /* Images.generated.swift in Sources */,
 				470B3A7D2CA1C97E0035191A /* CalculateEmployerCostsViewModel.swift in Sources */,
@@ -759,6 +794,7 @@
 				47C9535B2C9EFB93007FCC8E /* Fonts.generated.swift in Sources */,
 				47C953E02C9FFC97007FCC8E /* ProfileView.swift in Sources */,
 				47C953752C9EFB93007FCC8E /* View+Additions.swift in Sources */,
+				472C92672CA2CAEE00104115 /* CalculationsViewModel.swift in Sources */,
 				47C953D82C9FF52F007FCC8E /* HomeView.swift in Sources */,
 				47C9538A2C9F035F007FCC8E /* PreloaderViewModel.swift in Sources */,
 				47C953922C9F0991007FCC8E /* OnboardingViewModel.swift in Sources */,

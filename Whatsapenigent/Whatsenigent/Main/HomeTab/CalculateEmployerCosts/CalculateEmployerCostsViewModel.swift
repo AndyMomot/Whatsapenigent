@@ -49,7 +49,17 @@ extension CalculateEmployerCostsView {
         func addItem(completion: @escaping () -> Void) {
             DispatchQueue.main.async { [weak self] in
                 guard let self, self.isFieldAllFields else { return }
-                let model = EmployeeCostsModel(netBenefit: self.netBenefit)
+                let model = EmployeeCostsModel(
+                    employmentCosts: Int(employmentCosts) ?? .zero,
+                    trainingCosts: Int(trainingCosts) ?? .zero,
+                    implementationCosts: Int(implementationCosts) ?? .zero,
+                    
+                    increasedProductivity: Int(increasedProductivity) ?? .zero,
+                    improvingRetentionRates: Int(improvingRetentionRates) ?? .zero,
+                    increasedRevenueRoles: Int(increasedRevenueRoles) ?? .zero,
+                    
+                    netBenefit: netBenefit
+                )
                 DefaultsService.employeeCosts.append(model)
                 completion()
             }

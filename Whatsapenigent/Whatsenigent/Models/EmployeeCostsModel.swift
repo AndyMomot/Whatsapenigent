@@ -11,5 +11,5 @@ struct EmployeeCostsModel: Codable, Identifiable {
     private(set) var id = UUID().uuidString
     private(set) var date = Date()
     var name: String = "Pracownik"
-    var netBenefit: Int
+    var employmentCosts, trainingCosts, implementationCosts, increasedProductivity, improvingRetentionRates, increasedRevenueRoles, netBenefit: Int
 }

@@ -57,7 +57,16 @@ struct EmployeeCostsResultCell: View {
     ZStack {
         Colors.aqua.swiftUIColor
         EmployeeCostsResultCell(
-            item: .init(netBenefit: 1000)
+            item: .init(
+                employmentCosts: 0,
+                trainingCosts: 0,
+                implementationCosts: 0,
+                
+                increasedProductivity: 0,
+                improvingRetentionRates: 0,
+                increasedRevenueRoles: 0,
+                
+                netBenefit: 1000)
         ) {}
             .padding(.horizontal)
     }
