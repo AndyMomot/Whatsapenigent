@@ -14,6 +14,9 @@
 		470B3A822CA1CA1E0035191A /* CustomGreedViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470B3A812CA1CA1E0035191A /* CustomGreedViewRow.swift */; };
 		470B3A842CA1D5210035191A /* PotentialBenefitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470B3A832CA1D5210035191A /* PotentialBenefitsView.swift */; };
 		470B3A862CA1D6CF0035191A /* CostsCalculationResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470B3A852CA1D6CF0035191A /* CostsCalculationResultView.swift */; };
+		472C925D2CA2B5F800104115 /* EmployeeCostsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472C925C2CA2B5F800104115 /* EmployeeCostsModel.swift */; };
+		472C925F2CA2BAA600104115 /* EmployeeCostsResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472C925E2CA2BAA600104115 /* EmployeeCostsResultCell.swift */; };
+		472C92612CA2BD0A00104115 /* EmployeeCostsResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472C92602CA2BD0A00104115 /* EmployeeCostsResultView.swift */; };
 		47C952F52C9EF898007FCC8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C952F42C9EF898007FCC8E /* AppDelegate.swift */; };
 		47C952F72C9EF898007FCC8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C952F62C9EF898007FCC8E /* SceneDelegate.swift */; };
 		47C952F92C9EF898007FCC8E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C952F82C9EF898007FCC8E /* RootViewController.swift */; };
@@ -93,6 +96,9 @@
 		470B3A812CA1CA1E0035191A /* CustomGreedViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGreedViewRow.swift; sourceTree = "<group>"; };
 		470B3A832CA1D5210035191A /* PotentialBenefitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotentialBenefitsView.swift; sourceTree = "<group>"; };
 		470B3A852CA1D6CF0035191A /* CostsCalculationResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsCalculationResultView.swift; sourceTree = "<group>"; };
+		472C925C2CA2B5F800104115 /* EmployeeCostsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCostsModel.swift; sourceTree = "<group>"; };
+		472C925E2CA2BAA600104115 /* EmployeeCostsResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCostsResultCell.swift; sourceTree = "<group>"; };
+		472C92602CA2BD0A00104115 /* EmployeeCostsResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCostsResultView.swift; sourceTree = "<group>"; };
 		47C952F12C9EF898007FCC8E /* Whatsenigent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whatsenigent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47C952F42C9EF898007FCC8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47C952F62C9EF898007FCC8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				470B3A772CA1C5160035191A /* EmployeeCostsView.swift */,
+				472C925E2CA2BAA600104115 /* EmployeeCostsResultCell.swift */,
+				472C92602CA2BD0A00104115 /* EmployeeCostsResultView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -486,6 +494,7 @@
 			isa = PBXGroup;
 			children = (
 				47C953CB2C9F1D29007FCC8E /* UserModel.swift */,
+				472C925C2CA2B5F800104115 /* EmployeeCostsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -511,10 +520,10 @@
 		47C953D52C9FF511007FCC8E /* HomeTab */ = {
 			isa = PBXGroup;
 			children = (
-				470B3A792CA1C9460035191A /* CalculateEmployerCosts */,
 				47C953D62C9FF525007FCC8E /* Home */,
 				47C953DE2C9FFC8D007FCC8E /* Profile */,
 				47C953E62CA187D0007FCC8E /* Settings */,
+				470B3A792CA1C9460035191A /* CalculateEmployerCosts */,
 			);
 			path = HomeTab;
 			sourceTree = "<group>";
@@ -725,12 +734,14 @@
 				47C953E82CA187DE007FCC8E /* SettingsView.swift in Sources */,
 				47C953D12C9FEFE9007FCC8E /* TabBar.swift in Sources */,
 				47C953762C9EFB93007FCC8E /* String+Additions.swift in Sources */,
+				472C925F2CA2BAA600104115 /* EmployeeCostsResultCell.swift in Sources */,
 				47C953EA2CA187E5007FCC8E /* SettingsViewModel.swift in Sources */,
 				47C953C62C9F15B2007FCC8E /* LoginViewModel.swift in Sources */,
 				47C953F02CA192D2007FCC8E /* NotificationManager.swift in Sources */,
 				47C953912C9F0991007FCC8E /* OnboardingView.swift in Sources */,
 				47C953742C9EFB93007FCC8E /* Date+Additions.swift in Sources */,
 				470B3A822CA1CA1E0035191A /* CustomGreedViewRow.swift in Sources */,
+				472C92612CA2BD0A00104115 /* EmployeeCostsResultView.swift in Sources */,
 				47C953E52CA17795007FCC8E /* GreenDivider.swift in Sources */,
 				47C953C42C9F15A8007FCC8E /* LoginView.swift in Sources */,
 				47C953DA2C9FF535007FCC8E /* HomeViewModel.swift in Sources */,
@@ -752,6 +763,7 @@
 				47C9538A2C9F035F007FCC8E /* PreloaderViewModel.swift in Sources */,
 				47C953922C9F0991007FCC8E /* OnboardingViewModel.swift in Sources */,
 				47C953BE2C9F0EC9007FCC8E /* NextButtonView.swift in Sources */,
+				472C925D2CA2B5F800104115 /* EmployeeCostsModel.swift in Sources */,
 				47C953692C9EFB93007FCC8E /* FileManagerService.swift in Sources */,
 				470B3A842CA1D5210035191A /* PotentialBenefitsView.swift in Sources */,
 				470B3A802CA1C9FC0035191A /* CostBenefitAnalysisView.swift in Sources */,

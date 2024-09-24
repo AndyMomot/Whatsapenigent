@@ -18,20 +18,23 @@ struct CustomGreedViewRow: View {
     
     var body: some View {
         HStack {
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 10) {
                 Text(title)
                     .foregroundStyle(Colors.blackCustom.swiftUIColor)
                     .font(Fonts.SFProDisplay.semibold.swiftUIFont(size: 12))
-                    .padding(.bottom, 10)
-                ForEach(subtitles, id: \.self) { subtitle in
-                    Text(subtitle)
-                        .foregroundStyle(Colors.blackCustom.swiftUIColor)
-                        .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 8))
+                
+                VStack(alignment: .leading, spacing: 4) {
+                    ForEach(subtitles, id: \.self) { subtitle in
+                        Text(subtitle)
+                            .foregroundStyle(Colors.blackCustom.swiftUIColor)
+                            .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 8))
+                    }
                 }
                 
                 Spacer()
             }
-            .padding(10)
+            .padding(.top, 10)
+            .padding(.leading, 10)
             .frame(width: bounds.width * 0.4)
             
             Spacer()
@@ -43,7 +46,7 @@ struct CustomGreedViewRow: View {
             Spacer()
             
             TextField(text: $value) {
-                Text("00")
+                Text("00...")
                     .foregroundStyle(.white)
                     .font(Fonts.SFProDisplay.italic.swiftUIFont(size: 12))
                     .keyboardType(.numberPad)

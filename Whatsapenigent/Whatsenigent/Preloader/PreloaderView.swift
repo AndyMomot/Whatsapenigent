@@ -35,9 +35,7 @@ struct PreloaderView: View {
                         .foregroundStyle(Colors.greenCustom.swiftUIColor)
                         .font(Fonts.SFProDisplay.thinItalic.swiftUIFont(size: 16))
                     
-                    CustomLoaderView {
-                        print("Did load")
-                    }
+                    CustomLoaderView {}
                 }
                 .padding(.horizontal)
                 .padding(.bottom)

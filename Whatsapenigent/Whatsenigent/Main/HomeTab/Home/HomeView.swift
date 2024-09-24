@@ -51,13 +51,23 @@ struct HomeView: View {
                                     }
                                     
                                     NextButtonView(title: "Rozpocznij") {
-                                        
+                                        viewModel.showCalculateEmployerCosts.toggle()
                                     }
                                     .frame(height: 74)
                                 }
                                 .padding(30)
                                 .background(.white)
                                 .cornerRadius(48, corners: .allCorners)
+                                
+                                if !viewModel.employeeCostsResultItems.isEmpty {
+                                    EmployeeCostsResultView(items: viewModel.employeeCostsResultItems) { item in
+                                        Task {
+                                            await viewModel.deleteEmployeeCosts(item: item)
+                                        }
+                                    }
+                                }
+                                
+                                Spacer(minLength: bounds.height * 0.1)
                             }
                             .padding(.horizontal)
                         }
@@ -66,8 +76,20 @@ struct HomeView: View {
                     }
                 }
             }
+            .onAppear {
+                Task {
+                    await viewModel.getEmployeeCostsResults()
+                }
+            }
             .navigationDestination(isPresented: $viewModel.showProfile) {
                 ProfileView()
+            }
+            .navigationDestination(isPresented: $viewModel.showCalculateEmployerCosts) {
+                CalculateEmployerCostsView {
+                    Task {
+                        await viewModel.getEmployeeCostsResults()
+                    }
+                }
             }
         }
     }

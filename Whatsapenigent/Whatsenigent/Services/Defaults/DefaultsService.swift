@@ -45,6 +45,21 @@ extension DefaultsService {
             standard.setValue(newValue, forKey: Keys.saveBattery.rawValue)
         }
     }
+    
+    static var employeeCosts: [EmployeeCostsModel] {
+        get {
+            if let data = standard.object(forKey: Keys.employeeCosts.rawValue) as? Data {
+                let items = try? JSONDecoder().decode([EmployeeCostsModel].self, from: data)
+                return items ?? []
+            }
+            return []
+        }
+        set {
+            if let data = try? JSONEncoder().encode(newValue) {
+                standard.setValue(data, forKey: Keys.employeeCosts.rawValue)
+            }
+        }
+    }
 }
 
 extension DefaultsService {
@@ -61,5 +76,6 @@ extension DefaultsService {
         case flow
         case user
         case saveBattery
+        case employeeCosts
     }
 }

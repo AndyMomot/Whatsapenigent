@@ -10,6 +10,12 @@ import SwiftUI
 struct CalculateEmployerCostsView: View {
     @StateObject private var viewModel = CalculateEmployerCostsViewModel()
     @State private var viewState: ViewState = .costBenefitAnalysis
+    @Environment(\.dismiss) private var dismiss
+    var onDismiss: () -> Void
+    
+    private var bounds: CGRect {
+        UIScreen.main.bounds
+    }
     
     var body: some View {
         ZStack {
@@ -71,20 +77,25 @@ struct CalculateEmployerCostsView: View {
                                         viewState = .potentialBenefits
                                     }
                                 case .next:
-                                    withAnimation {
-                                        viewState = .result
+                                    viewModel.addItem {
+                                        dismiss.callAsFunction()
+                                        onDismiss()
                                     }
                                 }
                             }
                             .padding(.horizontal)
                     }
+                    
+                    Spacer(minLength: bounds.height * 0.22)
                 }
                 .scrollIndicators(.never)
             }
         }
+        .hideKeyboardWhenTappedAround()
+        .navigationBarBackButtonHidden()
     }
 }
 
 #Preview {
-    CalculateEmployerCostsView()
+    CalculateEmployerCostsView {}
 }
