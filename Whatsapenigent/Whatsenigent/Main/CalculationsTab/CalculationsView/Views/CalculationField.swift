@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CalculationField: View {
     var title: String
+    var placeholder = "00..."
     @Binding var text: String
     var keyboardType: UIKeyboardType = .numberPad
     
@@ -26,7 +27,7 @@ struct CalculationField: View {
                 Spacer()
                 
                 TextField(text: $text) {
-                    Text("00...")
+                    Text(placeholder)
                         .foregroundStyle(.white)
                         .font(Fonts.SFProDisplay.italic.swiftUIFont(size: 12))
                 }

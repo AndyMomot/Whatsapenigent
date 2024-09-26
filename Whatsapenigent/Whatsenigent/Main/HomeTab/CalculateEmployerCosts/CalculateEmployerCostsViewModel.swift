@@ -50,14 +50,6 @@ extension CalculateEmployerCostsView {
             DispatchQueue.main.async { [weak self] in
                 guard let self, self.isFieldAllFields else { return }
                 let model = EmployeeCostsModel(
-                    employmentCosts: Int(employmentCosts) ?? .zero,
-                    trainingCosts: Int(trainingCosts) ?? .zero,
-                    implementationCosts: Int(implementationCosts) ?? .zero,
-                    
-                    increasedProductivity: Int(increasedProductivity) ?? .zero,
-                    improvingRetentionRates: Int(improvingRetentionRates) ?? .zero,
-                    increasedRevenueRoles: Int(increasedRevenueRoles) ?? .zero,
-                    
                     netBenefit: netBenefit
                 )
                 DefaultsService.employeeCosts.append(model)

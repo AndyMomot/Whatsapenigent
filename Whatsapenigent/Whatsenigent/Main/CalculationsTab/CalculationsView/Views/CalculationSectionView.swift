@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CalculationSectionView: View {
     var item: CalculationsView.CalculationSection
+    var viewState: CalculationsView.CalculationSectionState
     var onTap: () -> Void
     
     var body: some View {
@@ -26,12 +27,12 @@ struct CalculationSectionView: View {
             }
             .padding(10)
             .background(
-                item.state == .new ? Colors.aqua.swiftUIColor : Colors.greenLite.swiftUIColor
+                viewState == .new ? Colors.aqua.swiftUIColor : Colors.greenLite.swiftUIColor
             )
             .cornerRadius(18, corners: .allCorners)
-            .opacity(item.state == .finish ? 0.5 : 1)
+            .opacity(viewState == .finish ? 0.5 : 1)
             .overlay {
-                if item.state == .finish {
+                if viewState == .finish {
                     ZStack {
                         RoundedRectangle(cornerRadius: 18)
                             .stroke(.white, lineWidth: 2)
@@ -50,6 +51,6 @@ struct CalculationSectionView: View {
 }
 
 #Preview {
-    CalculationSectionView(item: .marketConditions(state: .inProgress)) {}
+    CalculationSectionView(item: .marketConditions, viewState: .new) {}
         .frame(maxWidth: 100, maxHeight: 95)
 }
