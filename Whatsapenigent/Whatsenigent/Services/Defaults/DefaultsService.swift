@@ -60,6 +60,15 @@ extension DefaultsService {
             }
         }
     }
+    
+    static var awardIndex: Int? {
+        get {
+            standard.integer(forKey: Keys.awardIndex.rawValue)
+        }
+        set {
+            standard.setValue(newValue, forKey: Keys.awardIndex.rawValue)
+        }
+    }
 }
 
 extension DefaultsService {
@@ -77,5 +86,6 @@ extension DefaultsService {
         case user
         case saveBattery
         case employeeCosts
+        case awardIndex
     }
 }

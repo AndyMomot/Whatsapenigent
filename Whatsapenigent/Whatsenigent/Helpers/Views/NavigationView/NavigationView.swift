@@ -54,6 +54,7 @@ struct NavigationView: View {
             } label: {
                 Asset.notifications.swiftUIImage
             }
+            .hidden()
         }
         .onAppear {
             Task {

@@ -11,7 +11,7 @@ import Combine
 extension OnboardingView {
     final class OnboardingViewModel: ObservableObject {
         @Published var showPrivacyPolicy = false
-        let ppUrl = URL(string: "https://www.google.com")
+        let ppUrl = URL(string: "https://whatsenigent.info/")
     }
     
     enum OnboardingItem: Int, CaseIterable {

@@ -49,8 +49,8 @@ struct CustomGreedViewRow: View {
                 Text("00...")
                     .foregroundStyle(.white)
                     .font(Fonts.SFProDisplay.italic.swiftUIFont(size: 12))
-                    .keyboardType(.numberPad)
             }
+            .keyboardType(.numberPad)
             .foregroundStyle(.white)
             .font(Fonts.SFProDisplay.italic.swiftUIFont(size: 12))
             .padding(7)

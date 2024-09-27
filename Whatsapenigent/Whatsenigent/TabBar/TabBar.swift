@@ -24,7 +24,7 @@ struct TabBar: View {
                 CalculationsView()
                     .tag(TabBarSelectionView.doc.rawValue)
                 
-                Text("achievements")
+                AwardsView()
                     .tag(TabBarSelectionView.achievements.rawValue)
             }
             
